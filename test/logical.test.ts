@@ -3,7 +3,7 @@ import app from "../src/app";
 
 describe("Logical Operations API", () => {
     const branchId: string = "1";
-    let department: string = "IT";
+    const department: string = "IT";
 
     it("should get all employees for a specific branch", async () => {
         const response = await request(app).get(`/api/v1/branches/${branchId}/employees`);
