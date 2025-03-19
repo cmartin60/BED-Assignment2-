@@ -2,7 +2,7 @@ import request from "supertest";
 import app from "../src/app";
 
 describe("Logical Operations API", () => {
-    let branchId: string = "1";
+    const branchId: string = "1";
     let department: string = "IT";
 
     it("should get all employees for a specific branch", async () => {
